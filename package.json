@@ -1,0 +1,22 @@
+{
+  "name": "languages-list",
+  "version": "1.0.0",
+  "description": "A comprehensive list of languages in JSON format for use in web and mobile applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rifaturrana/languages-list.git"
+  },
+  "keywords": [
+    "languages"
+  ],
+  "author": "Rifatur Rana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rifaturrana/languages-list/issues"
+  },
+  "homepage": "https://github.com/rifaturrana/languages-list#readme"
+}
