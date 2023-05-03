@@ -7,7 +7,7 @@ This is a simple package that provides a list of languages in JSON format that c
 You can install the package via npm by running the following command:
 
 ```console
-npm install languages-list
+npm install global-languages-list
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install languages-list
 To use the package, you can import it into your project as follows:
 
 ```console
-import languages from 'languages-list';
+const languages=require('global-languages-list');
 console.log(languages);
 ```
 
@@ -31,7 +31,7 @@ Here's an example of how you can use the language list to create a dropdown menu
 ```console
 <select>
   <option disabled selected>Select a language</option>
-  {languages.map((language) => (
+  {languages.allLanguages.map((language) => (
     <option value={language.code}>{language.name}</option>
   ))}
 </select>
@@ -40,7 +40,7 @@ Here's an example of how you can use the language list to create a dropdown menu
 To get the name of a language by its code, you can use the getLanguageByCode function:
 
 ```console
-const languages = require('languages-list');
+const languages = require('global-languages-list');
 
 const name = languages.getLanguageByCode('en');
 console.log(name); // "English"
@@ -49,7 +49,7 @@ console.log(name); // "English"
 To find a language object by either its code or name or both, you can use the findLanguage function:
 
 ```console
-const languages = require('languages-list');
+const languages = require('global-languages-list');
 
 
 const lang1 = languages.findLanguage('en');

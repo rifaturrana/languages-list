@@ -1,11 +1,11 @@
 const languages = require("./languages.json");
 
-function getLanguageByCode(code) {
+export function getLanguageByCode(code) {
   let language= languages.find((language) => language.code === code.toLowerCase());
   return language.name;
 }
 
-function findLanguage(code = "", name = "") {
+export function findLanguage(code = "", name = "") {
   if (!code && !name) {
     throw new Error("Please provide either a code or a name or both");
   }
